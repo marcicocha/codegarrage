@@ -1,55 +1,185 @@
 <template>
   <div>
-    <Nuxt />
+    <header
+      :class="{
+        header: true,
+        open: overlayIsVisible,
+      }"
+    >
+      <div
+        :class="{
+          overlay: true,
+          'fade-in': overlayIsVisible,
+          'fade-out': !overlayIsVisible,
+        }"
+      ></div>
+      <nav class="flex flex-jc-sb flex-ai-c">
+        <nuxt-link to="/" class="header__logo"
+          ><img src="@/assets/img/logo.svg" alt="logo"
+        /></nuxt-link>
+
+        <div
+          id="btnHamburger"
+          class="header__toggle hide-for-desktop"
+          @click="showOverlay"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="header__links hide-for-mobile">
+          <nuxt-link to="about"><span>About</span></nuxt-link>
+          <nuxt-link to="services"><span>Services</span></nuxt-link>
+          <nuxt-link to="portfolio"><span>Portfolio</span></nuxt-link>
+        </div>
+
+        <nuxt-link to="contact" class="button header__button hide-for-mobile"
+          >CONTACT US</nuxt-link
+        >
+      </nav>
+      <div
+        :class="{
+          header__menu: true,
+          'fade-in': overlayIsVisible,
+          'fade-out': !overlayIsVisible,
+        }"
+      >
+        <nuxt-link to="about"><span>About</span></nuxt-link>
+        <nuxt-link to="services"><span>Services</span></nuxt-link>
+        <nuxt-link to="portfolio"><span>Portfolio</span></nuxt-link>
+        <nuxt-link to="contact" class="button header__button"
+          >CONTACT US</nuxt-link
+        >
+      </div>
+    </header>
+    <div class="child-body">
+      <div>
+        <Nuxt />
+      </div>
+
+      <footer class="footer">
+        <section class="container flex flex-jc-sb flex-ai-c">
+          <h2>
+            We collaborate with ambitious brands and people; Let’s build
+            something great together.
+          </h2>
+          <div>
+            <nuxt-link to="contact" class="button">CONTACT US</nuxt-link>
+          </div>
+        </section>
+        <section class="container">
+          <div class="border flex">
+            <div class="footer__logo">
+              <img src="@/assets/img/logo.svg" alt="logo-white" />
+              <p>CodegarrageAfrica</p>
+            </div>
+            <div class="footer__details">
+              <div class="footer__details_lists flex">
+                <div>
+                  <p>Explore</p>
+                  <ul>
+                    <li>
+                      <nuxt-link to="about"><span>About</span></nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link to="services"><span>Services</span></nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link to="portfolio"
+                        ><span>Portfolio</span></nuxt-link
+                      >
+                    </li>
+                    <li>
+                      <nuxt-link to="portfolio"><span>Careers</span></nuxt-link>
+                    </li>
+                    <li>
+                      <nuxt-link to="portfolio"
+                        ><span>Testimonials</span></nuxt-link
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Contact</p>
+                  <ul>
+                    <li>codegarrageafrica@gmail.com</li>
+                    <li>08185956620</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Follow</p>
+                  <ul>
+                    <li>
+                      <a
+                        href="https://twitter.com/386konsult"
+                        target="_blank"
+                      ></a>
+                      Twitter
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/386konsult"
+                        target="_blank"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/386konsult"
+                        target="_blank"
+                        >LinkedIn</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Legal</p>
+                  <ul>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Lagos Office</p>
+                  <ul>
+                    <li>10, Karimu Ikotun close,</li>
+                    <li>Sabo, Yaba,</li>
+                    <li>Lagos, Nigeria</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Ibadan Office</p>
+                  <ul>
+                    <li>10, Karimu Ikotun close,</li>
+                    <li>Sabo, Yaba,</li>
+                    <li>Lagos, Nigeria</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div>
   </div>
 </template>
-
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script>
+export default {
+  data() {
+    return {
+      overlayIsVisible: false,
+    }
+  },
+  methods: {
+    showOverlay() {
+      console.log('CLICKED')
+      if (!this.overlayIsVisible) {
+        this.overlayIsVisible = true
+      } else {
+        this.overlayIsVisible = false
+      }
+    },
+  },
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>
+</script>

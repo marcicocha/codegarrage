@@ -1,63 +1,84 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">codegarrage</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div>
+    <AppIntroPage />
+    <AppOurCompany />
+    <AppYourNeed />
+    <section class="container padding">
+      <AppSectionHeading
+        class="ideaSection"
+        title="YOUR IDEAS"
+        description="OUR PORTFOLIO"
+      />
+      <AppYourIdeas />
+    </section>
+    <section class="container padding">
+      <AppSectionHeading
+        class="wordSection"
+        title="YOUR WORDS"
+        description="OUR MOTIVATION"
+      />
+      <AppYourWords />
+    </section>
   </div>
 </template>
-
 <script>
-export default {}
+import AppIntroPage from '@/components/indexPage/AppIntroPage'
+import AppOurCompany from '@/components/indexPage/AppOurCompany'
+import AppYourNeed from '@/components/indexPage/AppYourNeed'
+import AppYourIdeas from '@/components/indexPage/AppYourIdeas'
+import AppYourWords from '@/components/indexPage/AppYourWords'
+import AppSectionHeading from '@/components/UI/AppSectionHeading'
+
+export default {
+  components: {
+    AppIntroPage,
+    AppOurCompany,
+    AppYourNeed,
+    AppYourIdeas,
+    AppYourWords,
+    AppSectionHeading,
+  },
+}
 </script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style lang="scss" scoped>
+.ideaSection {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    background-image: url('@/assets/img/idea-arrow.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1.72125rem;
+    width: 10.6875rem;
+    margin-left: 3rem;
+    @include breakpoint-up(large) {
+      bottom: -4rem;
+      height: 4.548125rem;
+      width: 28.245625rem;
+      margin-left: 5rem;
+    }
+  }
 }
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.wordSection {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1.5rem;
+    background-image: url('@/assets/img/word-arrow.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1.850625rem;
+    width: 12.75rem;
+    margin-left: 1rem;
+    @include breakpoint-up(large) {
+      bottom: -4rem;
+      height: 3.709375rem;
+      width: 25.55875rem;
+      margin-left: 2rem;
+    }
+  }
 }
 </style>
