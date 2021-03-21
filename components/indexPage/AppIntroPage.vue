@@ -1,6 +1,6 @@
 <template>
   <section class="container flex flex-jc-sb">
-    <div>
+    <div class="column-6">
       <h2>
         Turn the best of your business ideas into innovative software solutions.
       </h2>
@@ -11,7 +11,7 @@
         requirements of the IT business.
       </p>
     </div>
-    <div></div>
+    <div class="column-6"></div>
   </section>
 </template>
 <script>

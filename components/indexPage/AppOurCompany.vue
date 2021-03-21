@@ -142,10 +142,10 @@ img {
     padding-bottom: 3.25rem;
     div {
       &:first-child {
-        margin-right: 2.5rem;
+        margin-right: 4rem;
       }
       &:last-child {
-        margin-left: 2.5rem;
+        margin-left: 4rem;
       }
     }
   }
@@ -197,7 +197,7 @@ img {
         position: relative;
         height: 6.16rem;
         img {
-          width: 40%;
+          width: 30%;
           object-position: center;
           position: absolute;
           top: 0;
@@ -215,7 +215,7 @@ img {
         &:nth-child(15) {
           width: 28.5714%;
           img {
-            width: 60%;
+            width: 50%;
             object-position: center;
           }
         }

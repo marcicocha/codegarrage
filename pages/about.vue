@@ -28,11 +28,15 @@
         <h6>MEET THE TEAM</h6>
         <div class="within__container p-tb">
           <h3 class="m-b">WITHIN THE OFFICE WALLS</h3>
-          <AppImageSlider :image-list="withinImgList" />
+          <br />
+          <AppCarousel :image-list="withinImgList" />
+          <!-- <AppImageSlider :image-list="withinImgList" /> -->
         </div>
         <div class="beyond__container p-tb">
           <h3 class="m-b">BEYOND THE OFFICE WALLS</h3>
-          <AppImageSlider :image-list="beyondImgList" />
+          <br />
+          <AppCarousel :image-list="beyondImgList" />
+          <!-- <AppImageSlider :image-list="beyondImgList" /> -->
         </div>
       </div>
     </section>
@@ -95,11 +99,13 @@
 </template>
 <script>
 import AppYourWords from '@/components/indexPage/AppYourWords'
-import AppImageSlider from '@/components/UI/AppImageSlider'
+// import AppImageSlider from '@/components/UI/AppImageSlider'
+import AppCarousel from '@/components/UI/AppCarousel'
 export default {
   components: {
     AppYourWords,
-    AppImageSlider,
+    AppCarousel,
+    // AppImageSlider,
   },
   data() {
     return {
