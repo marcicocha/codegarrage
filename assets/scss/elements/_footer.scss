@@ -4,8 +4,10 @@
   padding-top: 4.125rem !important;
   padding-bottom: 7.125rem !important;
   width: 100%;
+  margin-bottom: 3rem;
   @include breakpoint-up(large) {
     padding-bottom: 4.125rem !important;
+    margin-bottom: 5rem;
   }
   section {
     &:first-child {
