@@ -45,12 +45,20 @@
           'fade-out': !overlayIsVisible,
         }"
       >
-        <nuxt-link to="about"><span>About</span></nuxt-link>
-        <nuxt-link to="services"><span>Services</span></nuxt-link>
-        <nuxt-link to="portfolio"><span>Portfolio</span></nuxt-link>
-        <nuxt-link to="contact" class="button header__button"
-          >CONTACT US</nuxt-link
-        >
+        <div @click="showOverlay">
+          <nuxt-link to="about"><span>About</span></nuxt-link>
+        </div>
+        <div @click="showOverlay">
+          <nuxt-link to="services"><span>Services</span></nuxt-link>
+        </div>
+        <div @click="showOverlay">
+          <nuxt-link to="portfolio"><span>Portfolio</span></nuxt-link>
+        </div>
+        <div @click="showOverlay">
+          <nuxt-link to="contact" class="button header__button"
+            >CONTACT US</nuxt-link
+          >
+        </div>
       </div>
     </header>
     <div class="child-body">
@@ -91,7 +99,7 @@
                       >
                     </li>
                     <li>
-                      <nuxt-link to="portfolio"><span>Careers</span></nuxt-link>
+                      <nuxt-link to="career"><span>Careers</span></nuxt-link>
                     </li>
                     <li>
                       <nuxt-link to="portfolio"
