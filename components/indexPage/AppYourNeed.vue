@@ -24,73 +24,73 @@
           :class="{ active: needObj.id === 1 }"
           @click="changeNeedDataHandler(1)"
         >
-          <h3>Web Development</h3>
+          <h5>Web Development</h5>
         </div>
         <div
           :class="{ active: needObj.id === 2 }"
           @click="changeNeedDataHandler(2)"
         >
-          <h3>Mobile App Development</h3>
+          <h5>Mobile App Development</h5>
         </div>
         <div
           :class="{ active: needObj.id === 3 }"
           @click="changeNeedDataHandler(3)"
         >
-          <h3>Cloud Application Development</h3>
+          <h5>Cloud Application Development</h5>
         </div>
         <div
           :class="{ active: needObj.id === 4 }"
           @click="changeNeedDataHandler(4)"
         >
-          <h3>Custom Software Development</h3>
+          <h5>Custom Software Development</h5>
         </div>
         <div
           :class="{ active: needObj.id === 5 }"
           @click="changeNeedDataHandler(5)"
         >
-          <h3>Application Maintenance &amp; Support</h3>
+          <h5>Application Maintenance &amp; Support</h5>
         </div>
         <div
           :class="{ active: needObj.id === 6 }"
           @click="changeNeedDataHandler(6)"
         >
-          <h3>UX &amp; UI Design</h3>
+          <h5>UX &amp; UI Design</h5>
         </div>
         <div
           :class="{ active: needObj.id === 7 }"
           @click="changeNeedDataHandler(7)"
         >
-          <h3>DevOps as a Service</h3>
+          <h5>DevOps as a Service</h5>
         </div>
         <div
           :class="{ active: needObj.id === 8 }"
           @click="changeNeedDataHandler(8)"
         >
-          <h3>Software Product Engineering</h3>
+          <h5>Software Product Engineering</h5>
         </div>
         <div
           :class="{ active: needObj.id === 9 }"
           @click="changeNeedDataHandler(9)"
         >
-          <h3>Application Maintenance &amp; Support</h3>
+          <h5>Application Maintenance &amp; Support</h5>
         </div>
         <div
           :class="{ active: needObj.id === 10 }"
           @click="changeNeedDataHandler(10)"
         >
-          <h3>UX &amp; UI Design</h3>
+          <h5>UX &amp; UI Design</h5>
         </div>
         <div
           :class="{ active: needObj.id === 11 }"
           @click="changeNeedDataHandler(11)"
         >
-          <h3>DevOps as a Service</h3>
+          <h5>DevOps as a Service</h5>
         </div>
         <div
           :class="{ active: needObj.id === 12 }"
           @click="changeNeedDataHandler(12)"
         >
-          <h3>Software Product Engineering</h3>
+          <h5>Software Product Engineering</h5>
         </div>
       </div>
       <div class="need__description">
@@ -238,7 +238,7 @@ export default {
     background: $gold;
     border-color: $gold;
     color: $primary-color;
-    padding: 3.125rem 1.875rem;
+    padding: 3.125rem 2rem;
     h2 {
       margin-bottom: 2rem;
       text-align: center;
