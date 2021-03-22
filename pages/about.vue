@@ -2,15 +2,15 @@
   <div>
     <section class="container padding">
       <div>
-        <h2>
+        <h3 class="column-6">
           A software development company that uses strategy, branding and
           technology to help reach business and user objectives.
-        </h2>
+        </h3>
       </div>
     </section>
     <section class="container padding">
       <div class="flex flex-ai-c who-container">
-        <div class="column-6">
+        <div class="column-6 about__text">
           <h5>WHO WE ARE</h5>
           <p>
             We’re a team of makers, thinkers and explorers. We design and build
@@ -20,7 +20,15 @@
             customers, and innovating in their industries.
           </p>
         </div>
-        <div class="column-6"></div>
+        <div class="column-6 about__image">
+          <div class="about__image-container">
+            <div class="about-gold1"><span>Software Consulting</span></div>
+            <div class="about-red">
+              <span>Data-Related Software Engineering</span>
+            </div>
+            <div class="about-gold2"><span>Digital Transformation</span></div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="container padding">
@@ -41,7 +49,10 @@
       </div>
     </section>
     <section class="container padding">
-      <h2>Seamless collaboration, total transparency, secure delivery.</h2>
+      <h2 class="m-b">
+        Seamless collaboration, total transparency, secure delivery.
+      </h2>
+      <br />
       <div class="flex flex-wrap flex-ai-c">
         <div class="info-flex column-6 p-tb">
           <div class="p-r">
@@ -49,7 +60,7 @@
           </div>
           <div class="p-l">
             <h6>RECEIVE</h6>
-            <h3>Understand your business &amp; Users</h3>
+            <h5>Understand your business &amp; Users</h5>
             <p>
               We work with you to define business goals, identify feasible
               technologies, define timelines and help you achieve success.
@@ -60,7 +71,7 @@
           <div class="p-r"><h2 class="styled__h2">02</h2></div>
           <div class="p-l">
             <h6>REACT</h6>
-            <h3>Plan product strategy</h3>
+            <h5>Plan product strategy</h5>
             <p>
               We'll work with you and other key stakeholders to prioritise
               objectives and formulate a proven strategy.
@@ -71,7 +82,7 @@
           <div class="p-r"><h2 class="styled__h2">03</h2></div>
           <div class="p-l">
             <h6>RESPOND</h6>
-            <h3>Research, ideate &amp; design</h3>
+            <h5>Research, ideate &amp; design</h5>
             <p>
               We turn qualitative and quantiative data into world-class, user
               friendly experiences that your customers love
@@ -82,7 +93,7 @@
           <div class="p-r"><h2 class="styled__h2">04</h2></div>
           <div class="p-l">
             <h6>REVISE</h6>
-            <h3>Execute, track &amp; iterate</h3>
+            <h5>Execute, track &amp; iterate</h5>
             <p>
               Once your product is live, we will help with tracking the
               performance and provide rapid iterations to constantly improve
@@ -137,14 +148,92 @@ export default {
 .info-flex {
   display: flex;
   align-items: center;
-}
-.who-container {
-  div {
-    &:first-child {
-      order: 2;
+  justify-content: space-between;
+  @include breakpoint-up(large) {
+    &:nth-child(odd) {
+      padding-right: 1.5rem;
     }
-    &:last-child {
+    &:nth-child(even) {
+      padding-left: 1.5rem;
+    }
+  }
+}
+
+.who-container {
+  .about {
+    &__text {
+      order: 2;
+      margin-bottom: 2rem;
+    }
+    &__image {
       order: 1;
+      &-container {
+        display: flex;
+        // justify-content: center;
+        div {
+          position: relative;
+          width: 4.5625rem;
+          height: 21.75rem;
+          margin: 1.5rem;
+          border-radius: 0.25rem;
+          font-size: $s16;
+          font-family: $nunito;
+          font-weight: 900;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #443323;
+          }
+          @include breakpoint-up(large) {
+            width: 5.875rem;
+            height: 27.8125rem;
+            font-size: 1.375rem;
+          }
+          &:not(:nth-child(2)) {
+            background: $gold;
+            top: 5rem;
+          }
+          &:first-child {
+            top: 2.5rem;
+            &::after {
+              top: -2rem;
+              left: 1.2rem;
+            }
+          }
+          &:nth-child(2) {
+            background: $dark-red;
+            &::after {
+              height: 90%;
+              top: 2rem;
+              left: 1.2rem;
+            }
+          }
+          &:last-child {
+            top: 2.5rem;
+            &::after {
+              height: 90%;
+              top: 1.5rem;
+              left: 1.2rem;
+            }
+          }
+          span {
+            position: absolute;
+            top: 7rem;
+            left: -9.5rem;
+            // transform-origin: center;
+            transform: rotate(-90deg);
+            z-index: 2;
+            width: 23.5rem;
+            @include breakpoint-up(large) {
+              top: 12rem;
+              left: -9rem;
+              width: 25rem;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -161,7 +250,7 @@ export default {
     margin-left: 1rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   &::after {
     content: '';

@@ -2,7 +2,7 @@
   <div>
     <section class="container padding">
       <h6>Contact Us</h6>
-      <h3>
+      <h3 class="column-6">
         Feel free to contact us at any time that you find convenient, You will
         receive a response in the shortest time possible.
       </h3>
