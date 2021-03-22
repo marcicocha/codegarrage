@@ -2,7 +2,7 @@
   <div>
     <section class="container padding">
       <h6>OUR WORK</h6>
-      <h3>
+      <h3 class="column-6">
         At Codegarrage, you will be a member of our talented team which has been
         bringing business ideas to life. Our mission is to create solutions that
         improve the lives of people in a convenient and secure way. The creation
