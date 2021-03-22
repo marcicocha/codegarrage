@@ -142,6 +142,7 @@ h3 {
   font-family: $nunito;
   font-size: 1.25rem;
   font-weight: 700;
+  line-height: 2.2rem;
   @include breakpoint-up(large) {
     font-size: 1.5rem;
   }

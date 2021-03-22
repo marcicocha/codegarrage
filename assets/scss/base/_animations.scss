@@ -1,37 +1,154 @@
 .has-fade {
+  visibility: hidden;
+}
+@keyframes fade-in {
+  from {
     visibility: hidden;
+    opacity: 0;
   }
-  @keyframes fade-in {
-    from {
-      visibility: hidden;
-      opacity: 0;
-    }
-    1% {
-      visibility: visible;
-    }
-    to {
-      visibility: visible;
-      opacity: 1;
+  1% {
+    visibility: visible;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 200ms ease-in-out forwards;
+}
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 200ms ease-in-out forwards;
+}
+@keyframes about-gold1 {
+  from {
+    background: $dark-red;
+    opacity: 0.3;
+    top: -2rem;
+    left: 1.2rem;
+    border: transparent;
+  }
+  50% {
+    opacity: 0.4;
+    top: -1.8rem;
+    left: 1.3rem;
+    border: transparent;
+  }
+  80% {
+    opacity: 0.6;
+    top: -1.8rem;
+    left: 1.4rem;
+    border: transparent;
+  }
+  to {
+    background: $dark-red;
+    opacity: 1;
+    top: -1.2rem;
+    left: 1.5rem;
+    border-radius: 0.25rem;
+    border: transparent;
+  }
+}
+.about-gold1 {
+  &:hover {
+    &::after {
+      animation: about-gold1 200ms ease-in-out forwards;
     }
   }
-  .fade-in {
-    animation: fade-in 200ms ease-in-out forwards;
+}
+@keyframes about-gold2 {
+  from {
+    height: 90%;
+    background: $dark-red;
+    opacity: 0.3;
+    top: 1.5rem;
+    left: 1.2rem;
+    border: transparent;
   }
-  @keyframes fade-out {
-    from {
-      visibility: visible;
-      opacity: 1;
-    }
-    99% {
-        visibility: visible;
-        opacity: 0;
-    }
-    to {
-      visibility: hidden;
-      opacity: 0;
+  50% {
+    height: 94%;
+    opacity: 0.4;
+    top: -1.8rem;
+    left: 1.3rem;
+    border: transparent;
+  }
+  80% {
+    height: 98%;
+    opacity: 0.6;
+    top: -1.8rem;
+    left: 1.4rem;
+    border: transparent;
+  }
+  to {
+    height: 100%;
+    background: $dark-red;
+    opacity: 1;
+    top: -2rem;
+    left: 1.5rem;
+    border-radius: 0.25rem;
+    border: transparent;
+  }
+}
+.about-gold2 {
+  &:hover {
+    &::after {
+      animation: about-gold2 200ms ease-in-out forwards;
     }
   }
-  .fade-out {
-    animation: fade-out 200ms ease-in-out forwards;
+}
+
+@keyframes about-red {
+  from {
+    height: 90%;
+    background: $gold;
+    opacity: 0.3;
+    top: 2rem;
+    left: 1.2rem;
+    border: transparent;
   }
-  
+  50% {
+    height: 94%;
+    opacity: 0.4;
+    top: 1rem;
+    left: 1.3rem;
+    border: transparent;
+  }
+  80% {
+    height: 98%;
+    opacity: 0.6;
+    top: 0;
+    left: 1.4rem;
+    border: transparent;
+  }
+  to {
+    height: 100%;
+    background: $gold;
+    opacity: 1;
+    top: -2rem;
+    left: 1.5rem;
+    border-radius: 0.25rem;
+    border: transparent;
+  }
+}
+
+.about-red {
+  &:hover {
+    &::after {
+      animation: about-red 200ms ease-in-out forwards;
+    }
+  }
+}
