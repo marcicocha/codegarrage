@@ -9,6 +9,7 @@
         title="YOUR IDEAS"
         description="OUR PORTFOLIO"
       />
+      <br />
       <AppYourIdeas />
     </section>
     <section class="container padding">
@@ -17,6 +18,7 @@
         title="YOUR WORDS"
         description="OUR MOTIVATION"
       />
+      <br />
       <AppYourWords />
     </section>
   </div>

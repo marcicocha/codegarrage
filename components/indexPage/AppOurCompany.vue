@@ -176,7 +176,7 @@ img {
     align-content: center;
     div {
       width: 20%;
-      padding: 0.5rem;
+      padding: 1rem;
       display: block;
       position: relative;
       &:nth-child(13) {
