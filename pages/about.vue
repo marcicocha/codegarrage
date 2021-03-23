@@ -185,6 +185,7 @@ export default {
             width: 100%;
             height: 100%;
             border: 1px solid #443323;
+            transition: top 2s, left 4s, opacity 4s;
           }
           @include breakpoint-up(large) {
             width: 5.875rem;
