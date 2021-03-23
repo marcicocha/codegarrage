@@ -1,6 +1,6 @@
 <template>
   <section class="container flex flex-jc-sb flex-ai-c">
-    <div class="column-6 p-r">
+    <div class="column-6 p-r" style="margin-bottom: 3rem">
       <h2>
         Turn the best of your business ideas into innovative software solutions.
       </h2>
@@ -12,7 +12,7 @@
         requirements of the IT business.
       </p>
     </div>
-    <div class="column-6">
+    <div class="column-6" style="margin-bottom: 4rem">
       <div class="intro__image">
         <div class="intro__image-container">
           <div class="div__title title1"><h1>01</h1></div>
