@@ -85,7 +85,7 @@ export default {
             position: absolute;
             top: 20%;
             bottom: 0;
-            left: 10px;
+            left: 5px;
             font-family: $nunito;
             font-size: 0.75rem;
             font-weight: 800;
