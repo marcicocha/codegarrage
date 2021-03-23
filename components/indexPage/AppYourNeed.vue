@@ -5,6 +5,7 @@
       title="YOUR NEEDS"
       description="OUR SERVICES"
     />
+    <br />
     <div class="hide-for-desktop">
       <AppAccordion
         v-for="need in needList"

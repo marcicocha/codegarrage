@@ -1,6 +1,6 @@
 <template>
-  <section class="container flex flex-jc-sb flex-ai-c">
-    <div class="column-6 p-r" style="margin-bottom: 3rem">
+  <section class="container flex flex-jc-sb">
+    <div class="column-6 p-right" style="margin-bottom: 3rem">
       <h2>
         Turn the best of your business ideas into innovative software solutions.
       </h2>
@@ -38,6 +38,12 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.p-right {
+  @include breakpoint-up(large) {
+    margin-top: 3rem;
+    padding-right: 2rem;
+  }
+}
 .intro {
   &__image {
     display: flex;
@@ -58,7 +64,7 @@ export default {
           text-align: right;
           margin: 0;
           @include breakpoint-up(large) {
-            width: 5.875rem;
+            width: 5rem;
           }
           &::after {
             content: '';
@@ -89,10 +95,10 @@ export default {
             height: 5.5625rem;
             span {
               top: 25%;
-              font-weight: 900;
-              font-size: 1.5rem;
+              font-weight: 800;
+              font-size: 1.25rem;
               line-height: 1.5rem;
-              left: 5px;
+              left: 10px;
             }
           }
         }
@@ -143,7 +149,8 @@ export default {
         width: 9rem;
         @include breakpoint-up(large) {
           top: 49%;
-          width: 17.6875rem;
+          right: -35%;
+          width: 16rem;
         }
       }
       .text2 {
@@ -161,7 +168,7 @@ export default {
       .text3 {
         width: 9.4375rem;
         @include breakpoint-up(large) {
-          width: 18.625rem;
+          width: 17rem;
         }
       }
     }

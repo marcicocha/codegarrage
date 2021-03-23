@@ -58,7 +58,7 @@ export default {
   border-radius: 5px;
   padding: 1.5rem;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   @include breakpoint-up(large) {
     width: 32%;
   }

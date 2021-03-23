@@ -109,7 +109,7 @@ a:hover {
 }
 h1 {
   font-family: $nunito;
-  font-weight: 800;
+  font-weight: 700;
   @include breakpoint-down(medium) {
     font-size: 1.5rem;
     line-height: 2.01rem;
