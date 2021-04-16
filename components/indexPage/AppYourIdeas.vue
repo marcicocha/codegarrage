@@ -19,29 +19,86 @@ export default {
     return {
       ideaList: [
         {
-          title: '386Konsult',
-          description: 'High-Level Industry Knowledge and Cutting Technology',
-          badgeList: ['Branding', 'UI/UX Design'],
-          imgPath: 'idea/360Konsult.svg',
+          title: 'Fuse ERP',
+          description: 'Unlock the full potential of your business',
+          domain: 'Enterprise Resource Planning Solution',
+          badgeList: [
+            'UI/UX Design',
+            'Web Development',
+            'Devops and Cloud Services',
+            'Software Testing/QA',
+            'Application Maintenance and Support',
+          ],
+          imgPath: 'idea/fuse.svg',
         },
         {
-          title: 'Driveme NG',
+          title: 'Teflon Hub',
           description:
-            'Search, Hire and Manage Verified and Professional Drivers',
-          badgeList: ['UI/UX Design', 'Web App Development'],
-          imgPath: 'idea/driveMe.svg',
+            'Payment service provider that allows payment across platforms',
+          domain: 'Fintech / Payment Gateway',
+          badgeList: [
+            'Code Review and restructuring',
+            'Application Maintenance and Support',
+            'Web Development',
+            'Mobile Development',
+            'Software Testing/QA',
+          ],
+          imgPath: 'idea/teflonhub.png',
+        },
+        {
+          title: 'Simplefiance Nigeria',
+          description: 'Your business bank on the go',
+          domain: 'Fintech / Loan',
+          badgeList: ['Mobile App Development'],
+          imgPath: 'idea/simplefi.png',
+        },
+        {
+          title: 'Atlantica',
+          description:
+            'Satellite imagery, aerial data for geospatial solutions',
+          domain: 'Remote Sensing / Geospatial Solution',
+          badgeList: [
+            'Web Application',
+            'Application Maintenance and Support',
+            'Devops and Cloud Services',
+          ],
+          imgPath: 'idea/atlantic-factorial.png',
+        },
+        {
+          title: 'Lucro',
+          description: 'AI driven investment, payment and advisory platform',
+          domain: 'Fintech / Investment / AI',
+          badgeList: [
+            'Acceleration and Incubation',
+            'Artificial Intelligence/Machine Learning',
+            'Mobile App Development',
+          ],
+          imgPath: 'idea/lucro.png',
+        },
+        {
+          title: '386Konsult',
+          description: 'Provider of Technology Point in Africa',
+          domain: 'Innovation / Technology / consulting / Cybersecurity',
+          badgeList: ['Acceleration and Incubation', 'Web'],
+          imgPath: 'idea/360Konsult.svg',
         },
         {
           title: 'Centric Gateway',
           description: 'Building payments into business value chain.',
+          domain: 'Fintech / Payment Gateway',
           badgeList: ['DevsecOPs'],
           imgPath: 'idea/centric.svg',
         },
         {
-          title: 'Fuse ERP',
-          description: 'Unlock the full potential of your business.',
-          badgeList: ['UI/UX Design', 'Web App Development'],
-          imgPath: 'idea/fuse.svg',
+          title: 'Bankless',
+          description: 'Next-generation Payment Solutions Provider',
+          domain: ' Fintech / Mobile app',
+          badgeList: [
+            'Acceleration and Incubation',
+            'Web Development',
+            'Mobile Development',
+          ],
+          imgPath: 'idea/bankless.png',
         },
       ],
     }

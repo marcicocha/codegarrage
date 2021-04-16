@@ -111,7 +111,7 @@
                 <div>
                   <p>Contact</p>
                   <ul>
-                    <li>codegarrageafrica@gmail.com</li>
+                    <li>services@codegarage.africa</li>
                     <li>08185956620</li>
                   </ul>
                 </div>
@@ -120,7 +120,7 @@
                   <ul>
                     <li>
                       <a
-                        href="https://twitter.com/386konsult"
+                        href="https://twitter.com/CodegarageA"
                         target="_blank"
                       ></a>
                       Twitter
@@ -159,9 +159,9 @@
                 <div>
                   <p>Ibadan Office</p>
                   <ul>
-                    <li>10, Karimu Ikotun close,</li>
-                    <li>Sabo, Yaba,</li>
-                    <li>Lagos, Nigeria</li>
+                    <li>CodeGarrage Building,</li>
+                    <li>Omolayo Bus-Stop, Akobo</li>
+                    <li>Ibadan, Nigeria</li>
                   </ul>
                 </div>
               </div>

@@ -8,7 +8,10 @@
       </h3>
       <br />
       <div class="service-img">
-        <img src="@/assets/img/idea/driveMe.svg" alt="driveMe" />
+        <img
+          src="@/assets/img/idea/atlantic-factorial.png"
+          alt="atlantic-factorial"
+        />
       </div>
     </section>
     <section class="container padding">
@@ -33,76 +36,88 @@ export default {
     return {
       cardList: [
         {
-          title: 'Website Development',
+          title: 'Web development',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
-          badgeList: ['Front-End Development', 'Back-End Development'],
+            'Tap into our deep web development expertise to build any web solution that your company needs, from  dynamic websites to complex enterprise-sized web solutions.',
+          badgeList: ['Frontend Development', 'Backend Development'],
         },
         {
-          title: 'Mobile App Development',
+          title: 'Mobile Development',
           description:
-            'Our Android, iOS, and cross-platform solutions meet all the modern requirements and utilize best practices in terms of functionality, security, scalability and other parameters.',
-          badgeList: ['Flutter', 'React-Native'],
+            'Steering clients  through digital transformation, we build intuitive and engaging  Android, iOS, and cross-platform for businesses that your end users can adapt to quickly.',
+          badgeList: ['Hybrid Apps', 'Native Apps'],
         },
         {
-          title: 'Cloud Application Development',
+          title: 'Incubation and Acceleration',
           description:
-            'Codegarrage ensures you get the best of end-to-end cloud managed services, including cloud infrastructure consulting, troubleshooting, management, monitoring, and security for your cloud applications',
-          badgeList: ['DevsecOPs'],
+            'With exclusive access to resources, tools, and services, we support your startup business and help you grow your network of mentors, investors and founders.',
+          badgeList: ['Incubation', 'Acceleration'],
         },
         {
-          title: 'Cloud Application Development',
+          title: 'Software Testing/Quality Assurance',
           description:
-            'Codegarrage ensures you get the best of end-to-end cloud managed services, including cloud infrastructure consulting, troubleshooting, management, monitoring, and security for your cloud applications',
-          badgeList: ['DevsecOPs'],
+            'With our unparalleled technical expertise, we implement quality testing frameworks and automation expertise using current testing trends.',
+          badgeList: [
+            'Automated Tests',
+            'Manual Test',
+            'Performance Test',
+            'Security Test',
+          ],
         },
         {
-          title: 'Cloud Application Development',
+          title: 'Application Maintenance and Support',
           description:
-            'Codegarrage ensures you get the best of end-to-end cloud managed services, including cloud infrastructure consulting, troubleshooting, management, monitoring, and security for your cloud applications',
-          badgeList: ['DevsecOPs'],
+            'Keeping your application online, secure, updated and bug-free is our main goal, while we deal and resolve real time problems your  application might encounter on a day-to-day operational level.',
+          badgeList: ['Maintenance', 'Upgrade', 'Support'],
         },
         {
-          title: 'Cloud Application Development',
+          title: 'Research and Development',
           description:
-            'Codegarrage ensures you get the best of end-to-end cloud managed services, including cloud infrastructure consulting, troubleshooting, management, monitoring, and security for your cloud applications',
-          badgeList: ['DevsecOPs'],
+            'We perform original investigations and research findings to strengthen your software engineering, technical implementation or research thesis, which can be used to create improved technologies. We have talents, labs, processes and infrastructures to deliver world class results to you.',
+          badgeList: ['Research labs', 'Research Findings', 'Reporting'],
         },
         {
-          title: 'Cloud Application Development',
+          title: 'Cloud and Enterprise Application Development',
           description:
-            'Codegarrage ensures you get the best of end-to-end cloud managed services, including cloud infrastructure consulting, troubleshooting, management, monitoring, and security for your cloud applications',
-          badgeList: ['DevsecOPs'],
+            'We develop bespoke and streamlined enterprise solutions to automate your internal processes, drive business efficiency and flexibility, and provide advanced insights into your business operations and employees.',
+          badgeList: [
+            'ERP',
+            'CRM',
+            'HR',
+            'Accounting',
+            'Supply Chain',
+            'Logistics',
+          ],
         },
         {
-          title: 'Cloud Application Development',
+          title: 'Devops as a service',
           description:
-            'Codegarrage ensures you get the best of end-to-end cloud managed services, including cloud infrastructure consulting, troubleshooting, management, monitoring, and security for your cloud applications',
-          badgeList: ['DevsecOPs'],
+            'We offer cloud and devops solutions aimed at high performance, scalability, and agility at a reduced cost to maximize ROI, software availability,  cloud security, and continuous integrations allowing you to  run your solutions as fast as you run your business.',
+          badgeList: ['Devops', 'Cloudops'],
         },
         {
-          title: 'Cloud Application Development',
+          title: 'UI/UX and Product Design',
           description:
-            'Codegarrage ensures you get the best of end-to-end cloud managed services, including cloud infrastructure consulting, troubleshooting, management, monitoring, and security for your cloud applications',
-          badgeList: ['DevsecOPs'],
+            'We are a design first development company. Projects are driven by designers and they make sure design and experiences translate to code. With expressive design, we give life to brands and create a synergy between the brand and the user.',
+          badgeList: ['UI/UX', 'Product Design', 'Branding'],
         },
         {
-          title: 'Cloud Application Development',
+          title: ' Emergency and Response',
           description:
-            'Codegarrage ensures you get the best of end-to-end cloud managed services, including cloud infrastructure consulting, troubleshooting, management, monitoring, and security for your cloud applications',
-          badgeList: ['DevsecOPs'],
+            'This is a key service offered to businesses in need of quick  response to their business or application needs. Our dedicated emergency and response team are always available on a 24/7 hour basis to streamline your processes and give life to dying businesses or solutions.',
+          badgeList: ['Support', 'Development', 'Management'],
         },
         {
-          title: 'Cloud Application Development',
+          title: 'Data Analytics/AI/ML',
           description:
-            'Codegarrage ensures you get the best of end-to-end cloud managed services, including cloud infrastructure consulting, troubleshooting, management, monitoring, and security for your cloud applications',
-          badgeList: ['DevsecOPs'],
+            'With our decades of expertise in the areas of Artificial intelligence, deep learning, machine learning, and data analysis; we build highly intelligent, automated, and analytical solutions for businesses to fast-track your problem-solving capabilities.',
+          badgeList: ['AI', 'ML', 'Data Analytics', 'Bots', 'Chatbots'],
         },
         {
-          title: 'Cloud Application Development',
+          title: 'Software Programming Mentorship and Consulting',
           description:
-            'Codegarrage ensures you get the best of end-to-end cloud managed services, including cloud infrastructure consulting, troubleshooting, management, monitoring, and security for your cloud applications',
-          badgeList: ['DevsecOPs'],
+            'Business goals, technical requirements, project scoping and programing mentorship as we push the edge of innovations with our technical competencies and our delivery track record.',
+          badgeList: ['Internship', 'Training', 'Consultation'],
         },
       ],
     }

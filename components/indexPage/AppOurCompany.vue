@@ -30,7 +30,7 @@
         <h6>LEISURE</h6>
         <p>
           We value our employees commitment and their timely response to client
-          claims,by offering top notch tech service delivery.
+          claims, by offering top notch tech service delivery.
         </p>
         <p>
           An all inclusive employer we seek work life balance for our employees

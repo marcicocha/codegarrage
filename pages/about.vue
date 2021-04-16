@@ -4,7 +4,7 @@
       <div>
         <h3 class="column-6">
           A software development company that uses strategy, branding and
-          technology to help reach business and user objectives.
+          technology to help reach business and user objectives
         </h3>
       </div>
     </section>
@@ -14,7 +14,7 @@
           <h5>WHO WE ARE</h5>
           <p>
             We’re a team of makers, thinkers and explorers. We design and build
-            digital products because we’re curious people driven by continious
+            digital products because we’re curious people driven by continuous
             learning and solving hard problems. We gain a huge amount of
             fulfilment through growing our clients businesses, delighting their
             customers, and innovating in their industries.
@@ -121,14 +121,14 @@ export default {
   data() {
     return {
       withinImgList: [
-        '/within/img1.svg',
-        '/within/img2.svg',
-        '/within/img3.svg',
+        '/within/img1.jpg',
+        '/within/img2.JPG',
+        '/within/img3.JPG',
       ],
       beyondImgList: [
-        '/beyond/img1.svg',
-        '/beyond/img2.svg',
-        '/beyond/img3.svg',
+        '/beyond/img1.JPG',
+        '/beyond/img2.jpg',
+        '/beyond/img3.JPG',
       ],
     }
   },

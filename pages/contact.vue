@@ -11,7 +11,7 @@
       <div class="flex flex-jc-sb flex-ai-c">
         <div class="column-6 contact__image">
           <div>
-            <img src="@/assets/img/within/img2.svg" />
+            <img src="@/assets/img/contact-us.JPG" />
           </div>
         </div>
         <div class="column-6 contact__field">
@@ -94,7 +94,8 @@ export default {
         },
         {
           title: 'Ibadan Office',
-          description: '10, Karimu Ikotun close, Sabo Lagos, Nigeria.',
+          description:
+            'CodeGarrage Building, Omolayo Bus-Stop, Akobo, Ibadan, Nigeria.',
           imgPath: 'office-location/ibadan-office.svg',
         },
       ],
