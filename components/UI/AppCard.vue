@@ -9,6 +9,7 @@
     </div>
     <div>
       <h3>{{ cardObj.description }}</h3>
+      <small>{{ cardObj.domain }}</small>
     </div>
 
     <div

@@ -4,12 +4,12 @@
       <div class="word__image">
         <img :src="getImgUrl(word.imgPath)" />
       </div>
-      <div>
+      <!-- <div>
         <h5>{{ word.name }}</h5>
-      </div>
-      <div class="m-b word__position">
+      </div> -->
+      <!-- <div class="m-b word__position">
         <p>{{ word.position }}</p>
-      </div>
+      </div> -->
       <p>{{ word.description }}</p>
     </div>
   </div>
@@ -23,24 +23,21 @@ export default {
       wordLists: [
         {
           imgPath: 'hr-on-wheels.svg',
-          name: 'Azeez Habeeb',
-          position: 'CTO, HR-ON-WHEELS',
-          description:
-            'Our software engineers build high-quality solutions while utilizing the most recent tech capabilities. The range of our services is wide as we have a tech stack that would satisfy all the possible modern requirements of the IT business.',
+          name: 'Seun Banjo',
+          position: 'CTO, TEFLON HUB',
+          description: 'Good service with nice customer relationship.',
         },
         {
           imgPath: 'centric.svg',
-          name: 'Azeez Habeeb',
+          name: 'Toun Roberts',
           position: 'CO-FOUNDER, CENTRIC GATEWAY',
-          description:
-            'Our software engineers build high-quality solutions while utilizing the most recent tech capabilities. The range of our services is wide as we have a tech stack that would satisfy all the possible modern requirements of the IT business.',
+          description: 'I’d definitely recommend.',
         },
         {
-          imgPath: 'drive-me.svg',
-          name: 'Azeez Habeeb',
-          position: 'CEO, DRIVEME FLEET SERVICES',
-          description:
-            'Our software engineers build high-quality solutions while utilizing the most recent tech capabilities. The range of our services is wide as we have a tech stack that would satisfy all the possible modern requirements of the IT business.',
+          imgPath: 'lucro.svg',
+          name: 'David Omole',
+          position: 'CEO, LUCRO',
+          description: 'Passionate about helping.',
         },
       ],
     }

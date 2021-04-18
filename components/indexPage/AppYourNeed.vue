@@ -22,76 +22,11 @@
     <div class="flex need__container hide-for-mobile">
       <div class="need__list flex flex-wrap">
         <div
-          :class="{ active: needObj.id === 1 }"
-          @click="changeNeedDataHandler(1)"
+          v-for="need in needList"
+          :key="need.id"
+          @click="changeNeedDataHandler(need.id)"
         >
-          <h5>Web Development</h5>
-        </div>
-        <div
-          :class="{ active: needObj.id === 2 }"
-          @click="changeNeedDataHandler(2)"
-        >
-          <h5>Mobile App Development</h5>
-        </div>
-        <div
-          :class="{ active: needObj.id === 3 }"
-          @click="changeNeedDataHandler(3)"
-        >
-          <h5>Cloud Application Development</h5>
-        </div>
-        <div
-          :class="{ active: needObj.id === 4 }"
-          @click="changeNeedDataHandler(4)"
-        >
-          <h5>Custom Software Development</h5>
-        </div>
-        <div
-          :class="{ active: needObj.id === 5 }"
-          @click="changeNeedDataHandler(5)"
-        >
-          <h5>Application Maintenance &amp; Support</h5>
-        </div>
-        <div
-          :class="{ active: needObj.id === 6 }"
-          @click="changeNeedDataHandler(6)"
-        >
-          <h5>UX &amp; UI Design</h5>
-        </div>
-        <div
-          :class="{ active: needObj.id === 7 }"
-          @click="changeNeedDataHandler(7)"
-        >
-          <h5>DevOps as a Service</h5>
-        </div>
-        <div
-          :class="{ active: needObj.id === 8 }"
-          @click="changeNeedDataHandler(8)"
-        >
-          <h5>Software Product Engineering</h5>
-        </div>
-        <div
-          :class="{ active: needObj.id === 9 }"
-          @click="changeNeedDataHandler(9)"
-        >
-          <h5>Application Maintenance &amp; Support</h5>
-        </div>
-        <div
-          :class="{ active: needObj.id === 10 }"
-          @click="changeNeedDataHandler(10)"
-        >
-          <h5>UX &amp; UI Design</h5>
-        </div>
-        <div
-          :class="{ active: needObj.id === 11 }"
-          @click="changeNeedDataHandler(11)"
-        >
-          <h5>DevOps as a Service</h5>
-        </div>
-        <div
-          :class="{ active: needObj.id === 12 }"
-          @click="changeNeedDataHandler(12)"
-        >
-          <h5>Software Product Engineering</h5>
+          <h5>{{ need.title }}</h5>
         </div>
       </div>
       <div class="need__description">
@@ -116,73 +51,73 @@ export default {
         {
           title: 'Web Development',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
+            'Tap into our deep web development expertise to build any web solution that your company needs, from  dynamic websites to complex enterprise-sized web solutions.',
           id: 1,
         },
         {
           title: 'Mobile App Development',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
+            'Steering clients  through digital transformation, we build intuitive and engaging  Android, iOS, and cross-platform for businesses that your end users can adapt to quickly.',
           id: 2,
         },
         {
-          title: 'Cloud Application Development',
+          title: 'Incubation and Acceleration',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
+            'With exclusive access to resources, tools, and services, we support your startup business and help you grow your network of mentors, investors and founders.',
           id: 3,
         },
         {
-          title: 'Custom Software Development',
+          title: 'Software Testing/Quality Assurance',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
+            'With our unparalleled technical expertise, we implement quality testing frameworks and automation expertise using current testing trends.',
           id: 4,
         },
         {
           title: 'Application Maintenance & Support',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
+            'Keeping your application online, secure, updated and bug-free is our main goal, while we deal and resolve real time problems your  application might encounter on a day-to-day operational level.',
           id: 5,
         },
         {
-          title: 'UX & UI Design',
+          title: 'Research and Development',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
+            'We perform original investigations and research findings to strengthen your software engineering, technical implementation or research thesis, which can be used to create improved technologies. We have talents, labs, processes and infrastructures to deliver world class results to you.',
           id: 6,
         },
         {
-          title: 'DevOps as a Service',
+          title: 'Cloud and Enterprise application development',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
+            'We develop bespoke and streamlined enterprise solutions to automate your internal processes, drive business efficiency and flexibility, and provide advanced insights into your business operations and employees.',
           id: 7,
         },
         {
-          title: 'Software Product Engineering',
+          title: 'DevOps as a Service',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
+            'We offer cloud and devops solutions aimed at high performance, scalability, and agility at a reduced cost to maximize ROI, software availability,  cloud security, and continuous integrations allowing you to  run your solutions as fast as you run your business.',
           id: 8,
         },
         {
-          title: 'Application Maintenance & Support',
+          title: 'UI/UX and product design',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
+            'We are a design first development company. Projects are driven by designers and they make sure design and experiences translate to code. With expressive design, we give life to brands and create a synergy between the brand and the user.',
           id: 9,
         },
         {
-          title: 'UX & UI Design',
+          title: 'Emergency and Response',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
+            'This is a key service offered to businesses in need of quick  response to their business or application needs. Our dedicated emergency and response team are always available on a 24/7 hour basis to streamline your processes and give life to dying businesses or solutions.',
           id: 10,
         },
         {
-          title: 'DevOps as a Service',
+          title: 'Data Analytics/AI/ML',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
+            'With our decades of expertise in the areas of Artificial intelligence, deep learning, machine learning, and data analysis; we build highly intelligent, automated, and analytical solutions for businesses to fast-track your problem-solving capabilities.',
           id: 11,
         },
         {
-          title: 'Software Product Engineering',
+          title: 'Software Programming Mentorship and consulting',
           description:
-            'Tap into our deep web development expertise to build any web solution your company feels the need to receive: from single-page websites to complex enterprise-sized web portals and including everything in between.',
+            ' Business goals, technical requirements, project scoping and programing mentorship as we push the edge of innovations with our technical competencies and our delivery track record.',
           id: 12,
         },
       ],

@@ -2,7 +2,7 @@
   <section class="container padding">
     <AppSectionHeading
       class="companySection"
-      title="OUR COMPANY,"
+      title="OUR COMPANY"
       description="OUR CULTURE"
     />
 
@@ -30,7 +30,7 @@
         <h6>LEISURE</h6>
         <p>
           We value our employees commitment and their timely response to client
-          claims,by offering top notch tech service delivery.
+          claims, by offering top notch tech service delivery.
         </p>
         <p>
           An all inclusive employer we seek work life balance for our employees
@@ -48,14 +48,43 @@
       </div>
 
       <div class="logos">
-        <div><img src="@/assets/img/company-logo/ios.svg" alt="ios" /></div>
+        <div><img src="@/assets/img/company-logo/figma.svg" alt="figma" /></div>
+        <div>
+          <img src="@/assets/img/company-logo/angular.svg" alt="angular" />
+        </div>
+        <div><img src="@/assets/img/company-logo/vue.svg" alt="vue" /></div>
+        <div><img src="@/assets/img/company-logo/java.svg" alt="java" /></div>
+        <div>
+          <img src="@/assets/img/company-logo/flutter.svg" alt="flutter" />
+        </div>
         <div>
           <img
-            src="@/assets/img/company-logo/green-hexagon.svg"
-            alt="green-hexagon"
+            src="@/assets/img/company-logo/adobe-illustrator.svg"
+            alt="adobe-illustrator"
           />
         </div>
         <div>
+          <img
+            src="@/assets/img/company-logo/nativescript.svg"
+            alt="nativescript"
+          />
+        </div>
+        <div>
+          <img
+            src="@/assets/img/company-logo/typescript.svg"
+            alt="typescript"
+          />
+        </div>
+        <div><img src="@/assets/img/company-logo/jest.svg" alt="jest" /></div>
+        <div><img src="@/assets/img/company-logo/aws.svg" alt="aws" /></div>
+        <div>
+          <img
+            src="@/assets/img/company-logo/google-cloud.svg"
+            alt="google-cloud"
+          />
+        </div>
+
+        <!-- <div>
           <img src="@/assets/img/company-logo/andriod.svg" alt="andriod" />
         </div>
         <div><img src="@/assets/img/company-logo/php.svg" alt="php" /></div>
@@ -64,10 +93,7 @@
         <div>
           <img src="@/assets/img/company-logo/phython.svg" alt="phython" />
         </div>
-        <div>
-          <img src="@/assets/img/company-logo/angular.svg" alt="angular" />
-        </div>
-        <div><img src="@/assets/img/company-logo/java.svg" alt="java" /></div>
+
         <div>
           <img
             src="@/assets/img/company-logo/javascript.svg"
@@ -94,8 +120,7 @@
         </div>
         <div>
           <img src="@/assets/img/company-logo/hadoop.svg" alt="hadoop" />
-        </div>
-        <div><img src="@/assets/img/company-logo/aws.svg" alt="aws" /></div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -179,15 +204,15 @@ img {
       padding: 1rem;
       display: block;
       position: relative;
-      &:nth-child(13) {
-        width: 60%;
-      }
-      &:nth-child(14) {
-        width: 25%;
-      }
-      &:nth-child(15) {
+      &:nth-child(11) {
         width: 40%;
       }
+      // &:nth-child(14) {
+      //   width: 25%;
+      // }
+      // &:nth-child(15) {
+      //   width: 40%;
+      // }
       img {
         width: 100%;
       }

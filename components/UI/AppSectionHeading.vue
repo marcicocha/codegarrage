@@ -29,6 +29,7 @@ div {
 .section__heading_description {
   color: $gold;
   margin-left: 3rem;
+  margin-top: 0.5rem;
   @include breakpoint-up(large) {
     margin-left: 5rem;
   }
