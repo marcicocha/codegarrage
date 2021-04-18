@@ -11,6 +11,9 @@
       />
       <AppYourIdeas />
     </section>
+
+    <AppOurLeaders />
+
     <section class="container padding">
       <AppSectionHeading
         class="wordSection"
@@ -29,7 +32,7 @@ import AppYourNeed from '@/components/indexPage/AppYourNeed'
 import AppYourIdeas from '@/components/indexPage/AppYourIdeas'
 import AppYourWords from '@/components/indexPage/AppYourWords'
 import AppSectionHeading from '@/components/UI/AppSectionHeading'
-
+import AppOurLeaders from '@/components/indexPage/AppOurLeaders'
 export default {
   components: {
     AppIntroPage,
@@ -38,6 +41,7 @@ export default {
     AppYourIdeas,
     AppYourWords,
     AppSectionHeading,
+    AppOurLeaders,
   },
 }
 </script>

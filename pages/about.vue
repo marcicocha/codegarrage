@@ -111,7 +111,7 @@
 <script>
 import AppYourWords from '@/components/indexPage/AppYourWords'
 // import AppImageSlider from '@/components/UI/AppImageSlider'
-import AppCarousel from '@/components/UI/AppCarousel'
+import AppCarousel from '@/components/about/AppCarousel'
 export default {
   components: {
     AppYourWords,

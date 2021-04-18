@@ -127,14 +127,14 @@
                     </li>
                     <li>
                       <a
-                        href="https://www.instagram.com/386konsult"
+                        href="https://www.instagram.com/codegarageafrica/"
                         target="_blank"
                         >Instagram</a
                       >
                     </li>
                     <li>
                       <a
-                        href="https://www.linkedin.com/company/386konsult"
+                        href="https://www.linkedin.com/company/codegarage-africa/"
                         target="_blank"
                         >LinkedIn</a
                       >
