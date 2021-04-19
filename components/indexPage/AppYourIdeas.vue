@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-jc-sb flex-wrap card-parent">
     <AppCard
-      v-for="(idea, index) in ideaList"
+      v-for="(idea, index) in filteredList"
       :key="index"
       :card-obj="idea"
       class="card"
@@ -14,6 +14,12 @@ export default {
   name: 'AppYourNeed',
   components: {
     AppCard,
+  },
+  props: {
+    isHomePage: {
+      type: Boolean,
+      default: false,
+    },
   },
   data() {
     return {
@@ -102,6 +108,17 @@ export default {
         },
       ],
     }
+  },
+  computed: {
+    filteredList() {
+      if (this.isHomePage) {
+        const filteredArray = this.ideaList.filter((idea, i) => {
+          return i <= 3
+        })
+        return filteredArray
+      }
+      return this.ideaList
+    },
   },
 }
 </script>

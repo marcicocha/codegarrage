@@ -80,7 +80,7 @@
           <div class="border flex">
             <div class="footer__logo">
               <img src="@/assets/img/logo.svg" alt="logo-white" />
-              <p>CodegarrageAfrica</p>
+              <p>CodegarageAfrica</p>
             </div>
             <div class="footer__details">
               <div class="footer__details_lists flex">
@@ -159,7 +159,7 @@
                 <div>
                   <p>Ibadan Office</p>
                   <ul>
-                    <li>CodeGarrage Building,</li>
+                    <li>CodeGarage Building,</li>
                     <li>Omolayo Bus-Stop, Akobo</li>
                     <li>Ibadan, Nigeria</li>
                   </ul>

@@ -95,7 +95,7 @@ export default {
         {
           title: 'Ibadan Office',
           description:
-            'CodeGarrage Building, Omolayo Bus-Stop, Akobo, Ibadan, Nigeria.',
+            'CodeGarage Building, Omolayo Bus-Stop, Akobo, Ibadan, Nigeria.',
           imgPath: 'office-location/ibadan-office.svg',
         },
       ],

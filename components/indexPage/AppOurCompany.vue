@@ -22,7 +22,7 @@
         </p>
       </div>
       <div class="column-6">
-        <img src="@/assets/img/work.svg" alt="work-image" />
+        <img src="@/assets/img/within/img2.JPG" alt="work-image" />
       </div>
     </div>
     <div class="flex flex-jc-sb leisure">
@@ -38,7 +38,7 @@
         </p>
       </div>
       <div class="column-6">
-        <img src="@/assets/img/leisure.svg" alt="leisure-image" />
+        <img src="@/assets/img/beyond/img3.JPG" alt="leisure-image" />
       </div>
     </div>
     <div class="padding expertise">
@@ -46,45 +46,15 @@
         <h6>EXPERTISE</h6>
         <p>Powering growth for amazing businesses</p>
       </div>
-
       <div class="logos">
-        <div><img src="@/assets/img/company-logo/figma.svg" alt="figma" /></div>
-        <div>
-          <img src="@/assets/img/company-logo/angular.svg" alt="angular" />
-        </div>
-        <div><img src="@/assets/img/company-logo/vue.svg" alt="vue" /></div>
-        <div><img src="@/assets/img/company-logo/java.svg" alt="java" /></div>
-        <div>
-          <img src="@/assets/img/company-logo/flutter.svg" alt="flutter" />
-        </div>
+        <div><img src="@/assets/img/company-logo/ios.svg" alt="ios" /></div>
         <div>
           <img
-            src="@/assets/img/company-logo/adobe-illustrator.svg"
-            alt="adobe-illustrator"
+            src="@/assets/img/company-logo/green-hexagon.svg"
+            alt="green-hexagon"
           />
         </div>
         <div>
-          <img
-            src="@/assets/img/company-logo/nativescript.svg"
-            alt="nativescript"
-          />
-        </div>
-        <div>
-          <img
-            src="@/assets/img/company-logo/typescript.svg"
-            alt="typescript"
-          />
-        </div>
-        <div><img src="@/assets/img/company-logo/jest.svg" alt="jest" /></div>
-        <div><img src="@/assets/img/company-logo/aws.svg" alt="aws" /></div>
-        <div>
-          <img
-            src="@/assets/img/company-logo/google-cloud.svg"
-            alt="google-cloud"
-          />
-        </div>
-
-        <!-- <div>
           <img src="@/assets/img/company-logo/andriod.svg" alt="andriod" />
         </div>
         <div><img src="@/assets/img/company-logo/php.svg" alt="php" /></div>
@@ -93,7 +63,10 @@
         <div>
           <img src="@/assets/img/company-logo/phython.svg" alt="phython" />
         </div>
-
+        <div>
+          <img src="@/assets/img/company-logo/angular.svg" alt="angular" />
+        </div>
+        <div><img src="@/assets/img/company-logo/java.svg" alt="java" /></div>
         <div>
           <img
             src="@/assets/img/company-logo/javascript.svg"
@@ -120,7 +93,32 @@
         </div>
         <div>
           <img src="@/assets/img/company-logo/hadoop.svg" alt="hadoop" />
-        </div> -->
+        </div>
+        <div><img src="@/assets/img/company-logo/aws.svg" alt="aws" /></div>
+        <div><img src="@/assets/img/company-logo/figma.svg" alt="figma" /></div>
+        <div><img src="@/assets/img/company-logo/vue.svg" alt="vue" /></div>
+        <div>
+          <img src="@/assets/img/company-logo/flutter.svg" alt="flutter" />
+        </div>
+        <div>
+          <img
+            src="@/assets/img/company-logo/adobe-illustrator.svg"
+            alt="adobe-illustrator"
+          />
+        </div>
+        <div>
+          <img
+            src="@/assets/img/company-logo/typescript.svg"
+            alt="typescript"
+          />
+        </div>
+        <div><img src="@/assets/img/company-logo/jest.svg" alt="jest" /></div>
+        <div>
+          <img
+            src="@/assets/img/company-logo/google-cloud.svg"
+            alt="google-cloud"
+          />
+        </div>
       </div>
     </div>
   </section>
@@ -204,15 +202,16 @@ img {
       padding: 1rem;
       display: block;
       position: relative;
-      &:nth-child(11) {
+      &:nth-child(13) {
+        width: 60%;
+      }
+      &:nth-child(14) {
+        width: 25%;
+      }
+      &:nth-child(15),
+      &:nth-child(23) {
         width: 40%;
       }
-      // &:nth-child(14) {
-      //   width: 25%;
-      // }
-      // &:nth-child(15) {
-      //   width: 40%;
-      // }
       img {
         width: 100%;
       }
@@ -226,21 +225,45 @@ img {
           object-position: center;
           position: absolute;
           top: 0;
+          left: 0;
+        }
+        &:nth-child(14) {
+          width: 14.2857%;
+          img {
+            width: 60%;
+          }
         }
         &:first-child,
         &:nth-child(8),
         &:nth-child(14) {
           text-align: left;
         }
-        // &:nth-child(7),
-        // &:nth-child(13) {
-        //   text-align: right;
-        // }
+        &:nth-child(7),
+        &:nth-child(13) {
+          text-align: right;
+          img {
+            right: 0;
+          }
+        }
         &:nth-child(13),
-        &:nth-child(15) {
-          width: 28.5714%;
+        &:nth-child(15),
+        &:nth-child(23) {
+          width: 24%;
+          img {
+            width: 75%;
+            object-position: center;
+          }
+        }
+        &:nth-child(16) {
           img {
             width: 50%;
+            object-position: center;
+          }
+        }
+        &:nth-child(17),
+        &:nth-child(19) {
+          img {
+            width: 25%;
             object-position: center;
           }
         }
