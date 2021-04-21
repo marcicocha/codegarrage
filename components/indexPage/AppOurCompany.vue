@@ -22,7 +22,7 @@
         </p>
       </div>
       <div class="column-6">
-        <img src="@/assets/img/within/img2.JPG" alt="work-image" />
+        <img src="@/assets/img/within/img2.jpg" alt="work-image" />
       </div>
     </div>
     <div class="flex flex-jc-sb leisure">
@@ -38,7 +38,7 @@
         </p>
       </div>
       <div class="column-6">
-        <img src="@/assets/img/beyond/img3.JPG" alt="leisure-image" />
+        <img src="@/assets/img/beyond/img3.jpg" alt="leisure-image" />
       </div>
     </div>
     <div class="padding expertise">

@@ -6,7 +6,7 @@
       description="OUR LEADERS"
     />
     <br />
-    <AppCarousel :imageList="imageList" />
+    <AppCarousel :image-list="imageList" />
   </section>
 </template>
 <script>
@@ -22,22 +22,22 @@ export default {
     return {
       imageList: [
         {
-          imgPath: 'leader/Oluwafemi_korede.JPG',
+          imgPath: 'leader/oluwafemi_korede.jpg',
           name: 'Oluwafemi Korede',
           description: 'Engineering',
         },
         {
-          imgPath: 'leader/Sylvia_onwukwe.JPG',
+          imgPath: 'leader/sylvia_onwukwe.jpg',
           name: 'Sylvia Onwukwe',
           description: 'Engineering',
         },
         {
-          imgPath: 'leader/Bimpe_Ayoola.jpg',
+          imgPath: 'leader/bimpe_ayoola.jpg',
           name: 'Bimpe Ayoola',
           description: 'Operations and Projects',
         },
         {
-          imgPath: 'leader/Peter_Onu.jpg',
+          imgPath: 'leader/peter_onu.jpg',
           name: 'Peter Onu',
           description: 'Business and Projects',
         },
