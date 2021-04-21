@@ -59,7 +59,7 @@ export default {
           imgPath: 'idea/simplefi.png',
         },
         {
-          title: 'Atlantica',
+          title: 'Atlantic Factorial',
           description:
             'Satellite imagery, aerial data for geospatial solutions',
           domain: 'Remote Sensing / Geospatial Solution',

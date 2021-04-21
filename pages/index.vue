@@ -9,7 +9,7 @@
         title="YOUR IDEAS"
         description="OUR PORTFOLIO"
       />
-      <AppYourIdeas isHomePage />
+      <AppYourIdeas is-home-page />
     </section>
 
     <AppOurLeaders />

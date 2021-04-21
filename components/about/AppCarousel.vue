@@ -1,7 +1,7 @@
 <template>
   <Carousel
     :pagination-enabled="false"
-    :perPageCustom="[
+    :per-page-custom="[
       [640, 2],
       [1024, 3],
     ]"

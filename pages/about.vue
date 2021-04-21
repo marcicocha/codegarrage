@@ -122,13 +122,13 @@ export default {
     return {
       withinImgList: [
         '/within/img1.jpg',
-        '/within/img2.JPG',
-        '/within/img3.JPG',
+        '/within/img2.jpg',
+        '/within/img3.jpg',
       ],
       beyondImgList: [
-        '/beyond/img1.JPG',
+        '/beyond/img1.jpg',
         '/beyond/img2.jpg',
-        '/beyond/img3.JPG',
+        '/beyond/img3.jpg',
       ],
     }
   },
