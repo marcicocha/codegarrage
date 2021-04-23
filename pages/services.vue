@@ -32,6 +32,7 @@ export default {
   components: {
     AppServiceCard,
   },
+
   data() {
     return {
       cardList: [

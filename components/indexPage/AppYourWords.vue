@@ -10,7 +10,7 @@
       <!-- <div class="m-b word__position">
         <p>{{ word.position }}</p>
       </div> -->
-      <p>{{ word.description }}</p>
+      <p>{{ `" ${word.description} "` }}</p>
     </div>
   </div>
 </template>
@@ -24,20 +24,23 @@ export default {
         {
           imgPath: 'hr-on-wheels.svg',
           name: 'Seun Banjo',
-          position: 'CTO, TEFLON HUB',
-          description: 'Good service with nice customer relationship.',
+          position: 'CTO, HR-ON-WHEELS',
+          description:
+            'You all have built an excellent solution that has helped us increase our positive reviews online and given our customers the ability to give us valuable feedback. Thank you for your excellent work with us!',
         },
         {
-          imgPath: 'centric.svg',
+          imgPath: 'teflon-hub.png',
           name: 'Toun Roberts',
-          position: 'CO-FOUNDER, CENTRIC GATEWAY',
-          description: 'I’d definitely recommend.',
+          position: 'CO-FOUNDER, TEFLON HUB',
+          description:
+            'Your timely response, positive attitude to work, and personalized services has really relieved us a lot of technical stress.',
         },
         {
           imgPath: 'lucro.svg',
           name: 'David Omole',
           position: 'CEO, LUCRO',
-          description: 'Passionate about helping.',
+          description:
+            'The company represents among the highest level of development we’ve ever experienced. They have true entrepreneurial spirits and a lot of knowledge about different types of businesses',
         },
       ],
     }
