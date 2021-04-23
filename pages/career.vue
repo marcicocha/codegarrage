@@ -33,6 +33,7 @@ export default {
   components: {
     AppCard,
   },
+
   data() {
     return {
       benefitList: [
