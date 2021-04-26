@@ -1,10 +1,9 @@
 <template>
   <div>
     <section class="container padding">
-      <h6>Contact Us</h6>
+      <h6>{{ $t('contactUs') }}</h6>
       <h3 class="column-6">
-        Feel free to contact us at any time that you find convenient, You will
-        receive a response in the shortest time possible.
+        {{ $t('contactDescription') }}
       </h3>
     </section>
     <section class="container padding">
@@ -18,13 +17,13 @@
           <div class="flex flex-jc-sb input-container">
             <AppInput
               v-model="contactObject.firstName"
-              placeholder="First Name"
+              :placeholder="$t('firstName')"
               icon-path="user.svg"
               class="margin-right"
             />
             <AppInput
               v-model="contactObject.lastName"
-              placeholder="Last Name"
+              :placeholder="$t('lastName')"
               icon-path="user.svg"
               class="margin-left"
             />
@@ -32,35 +31,35 @@
           <div class="flex flex-jc-sb input-container">
             <AppInput
               v-model="contactObject.email"
-              placeholder="Email"
+              :placeholder="$t('email')"
               icon-path="email.svg"
               class="margin-right"
             />
             <AppInput
               v-model="contactObject.companyName"
-              placeholder="Company Name"
+              :placeholder="$t('companyName')"
               icon-path="home.svg"
               class="margin-left"
             />
           </div>
           <AppInput
             v-model="contactObject.phoneNumber"
-            placeholder="Phone Number"
+            :placeholder="$t('phoneNumber')"
             type="phone"
             icon-path="phone.svg"
           />
           <AppTextArea
             v-model="contactObject.message"
-            placeholder="Message"
+            :placeholder="$t('message')"
             icon-path="edit.svg"
           />
           <br />
-          <button class="button">SEND MESSAGE</button>
+          <button class="button">{{ $t('sendMessage') }}</button>
         </div>
       </div>
     </section>
     <section class="container padding">
-      <h2 class="benefit-heading p-tb m-b">Office locations</h2>
+      <h2 class="benefit-heading p-tb m-b">{{ $t('officeLocations') }}</h2>
       <br />
       <div class="flex flex-jc-c card-parent">
         <AppCard
@@ -88,14 +87,13 @@ export default {
       contactObject: {},
       officeList: [
         {
-          title: 'Lagos Office',
-          description: '10, Karimu Ikotun close, Sabo Lagos, Nigeria.',
+          title: 'lagosOffice',
+          description: 'lagosOfficeAddress',
           imgPath: 'office-location/lagos-office.svg',
         },
         {
-          title: 'Ibadan Office',
-          description:
-            'CodeGarage Building, Omolayo Bus-Stop, Akobo, Ibadan, Nigeria.',
+          title: 'ibadanOffice',
+          description: 'ibadanOfficeAddress',
           imgPath: 'office-location/ibadan-office.svg',
         },
       ],

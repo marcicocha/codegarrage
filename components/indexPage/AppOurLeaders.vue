@@ -2,8 +2,8 @@
   <section class="container padding">
     <AppSectionHeading
       class="companySection"
-      title="OUR COMPANY"
-      description="OUR LEADERS"
+      title="ourCompany"
+      description="ourLeaders"
     />
     <br />
     <AppCarousel :image-list="imageList" />
@@ -24,22 +24,22 @@ export default {
         {
           imgPath: 'leader/oluwafemi_korede.jpg',
           name: 'Oluwafemi Korede',
-          description: 'Engineering',
+          description: 'engineering',
         },
         {
           imgPath: 'leader/sylvia_onwukwe.jpg',
           name: 'Sylvia Onwukwe',
-          description: 'Engineering',
+          description: 'engineering',
         },
         {
           imgPath: 'leader/bimpe_ayoola.jpg',
           name: 'Bimpe Ayoola',
-          description: 'Operations and Projects',
+          description: 'operationProject',
         },
         {
           imgPath: 'leader/peter_onu.jpg',
           name: 'Peter Onu',
-          description: 'Business and Projects',
+          description: 'businessProject',
         },
       ],
     }

@@ -2,16 +2,16 @@
   <div class="service-card">
     <div class="child-container">
       <div class="title">
-        <h5>{{ cardObj.title }}</h5>
+        <h5>{{ $t(cardObj.title) }}</h5>
       </div>
-      <p>{{ cardObj.description }}</p>
+      <p>{{ $t(cardObj.description) }}</p>
       <div
         v-if="!cardObj.badgeList || cardObj.badgeList.length !== 0"
         class="badge"
       >
         <ul>
           <li v-for="(badge, index) in cardObj.badgeList" :key="index">
-            {{ badge }}
+            {{ $t(badge) }}
           </li>
         </ul>
       </div>

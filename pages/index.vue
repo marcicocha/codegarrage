@@ -6,8 +6,8 @@
     <section class="container padding">
       <AppSectionHeading
         class="ideaSection"
-        title="YOUR IDEAS"
-        description="OUR PORTFOLIO"
+        title="yourIdeas"
+        description="ourPortfolio"
       />
       <AppYourIdeas is-home-page />
     </section>
@@ -17,8 +17,8 @@
     <section class="container padding">
       <AppSectionHeading
         class="wordSection"
-        title="YOUR WORDS"
-        description="OUR MOTIVATION"
+        title="yourWords"
+        description="ourMotivation"
       />
       <br />
       <AppYourWords />

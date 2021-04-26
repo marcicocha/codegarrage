@@ -5,11 +5,11 @@
     </div>
 
     <div class="title">
-      <h5>{{ cardObj.title }}</h5>
+      <h5>{{ $t(cardObj.title) }}</h5>
     </div>
     <div>
-      <h3>{{ cardObj.description }}</h3>
-      <small>{{ cardObj.domain }}</small>
+      <h3>{{ $t(cardObj.description) }}</h3>
+      <small>{{ $t(cardObj.domain) }}</small>
     </div>
 
     <div
@@ -18,7 +18,7 @@
     >
       <ul>
         <li v-for="(badge, index) in cardObj.badgeList" :key="index">
-          {{ badge }}
+          {{ $t(badge) }}
         </li>
       </ul>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-jc-sb">
+  <div id="testimonial" class="flex flex-jc-sb">
     <div v-for="(word, index) in wordLists" :key="index" class="word">
       <div class="word__image">
         <img :src="getImgUrl(word.imgPath)" />
@@ -10,7 +10,7 @@
       <!-- <div class="m-b word__position">
         <p>{{ word.position }}</p>
       </div> -->
-      <p>{{ `" ${word.description} "` }}</p>
+      <p>" {{ $t(word.description) }} "</p>
     </div>
   </div>
 </template>
@@ -25,22 +25,19 @@ export default {
           imgPath: 'hr-on-wheels.svg',
           name: 'Seun Banjo',
           position: 'CTO, HR-ON-WHEELS',
-          description:
-            'You all have built an excellent solution that has helped us increase our positive reviews online and given our customers the ability to give us valuable feedback. Thank you for your excellent work with us!',
+          description: 'hrOnWheels',
         },
         {
           imgPath: 'teflon-hub.png',
           name: 'Toun Roberts',
           position: 'CO-FOUNDER, TEFLON HUB',
-          description:
-            'Your timely response, positive attitude to work, and personalized services has really relieved us a lot of technical stress.',
+          description: 'teflonHub',
         },
         {
           imgPath: 'lucro.svg',
           name: 'David Omole',
           position: 'CEO, LUCRO',
-          description:
-            'The company represents among the highest level of development we’ve ever experienced. They have true entrepreneurial spirits and a lot of knowledge about different types of businesses',
+          description: 'lucro',
         },
       ],
     }

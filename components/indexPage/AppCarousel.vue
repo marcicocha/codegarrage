@@ -11,7 +11,7 @@
         <img :src="getImgUrl(img.imgPath)" />
       </div>
       <p class="name">{{ img.name }}</p>
-      <p class="description">{{ img.description }}</p>
+      <p class="description">{{ $t(img.description) }}</p>
     </slide>
   </Carousel>
 </template>

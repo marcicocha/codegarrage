@@ -5,8 +5,8 @@
       <span></span>
     </div>
 
-    <h3 class="p-tb">{{ cardObj.title }}</h3>
-    <p>{{ cardObj.description }}</p>
+    <h3 class="p-tb">{{ $t(cardObj.title) }}</h3>
+    <p>{{ $t(cardObj.description) }}</p>
   </div>
 </template>
 <script>
