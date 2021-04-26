@@ -1,21 +1,16 @@
 <template>
   <div>
     <section class="container padding">
-      <h6>OUR WORK</h6>
+      <h6>{{ $t('career-heading') }}</h6>
       <h3 class="column-6">
-        At Codegarage, you will be a member of our talented team which has been
-        bringing business ideas to life. Our mission is to create solutions that
-        improve the lives of people in a convenient and secure way. The creation
-        of such solutions requires the involvement of committed people and new
-        innovative approaches they bring along. That is why we are looking for
-        talented professionals to join our team.
+        {{ $t('career-description') }}
       </h3>
       <br />
-      <button class="button">SEE JOB OPENINGS</button>
+      <button class="button">{{ $t('job-opening') }}</button>
     </section>
     <section class="container padding">
-      <h2 class="benefit-heading p-tb">Benefits</h2>
-
+      <h2 class="benefit-heading p-tb">{{ $t('benefits') }}</h2>
+      <br />
       <div class="p-tb flex flex-wrap">
         <AppCard
           v-for="(benefit, i) in benefitList"
@@ -39,33 +34,28 @@ export default {
       benefitList: [
         {
           id: '01',
-          title: 'Smart, kind colleagues',
-          description:
-            'Learn and grow with highly accomplished colleagues who’re invested in your personal and professional development.',
+          title: 'benefit1Title',
+          description: 'benefit1Description',
         },
         {
           id: '02',
-          title: 'Housing assistance',
-          description:
-            'We offer subsidized housing and relocation grants to all team members',
+          title: 'benefit2Title',
+          description: 'benefit2Description',
         },
         {
           id: '03',
-          title: 'Smart, kind colleagues',
-          description:
-            'Learn and grow with highly accomplished colleagues who’re invested in your personal and professional development.',
+          title: 'benefit3Title',
+          description: 'benefit3Description',
         },
         {
           id: '04',
-          title: 'Training programs',
-          description:
-            'We invest in our people to ensure they can achieve their short, medium, and long term professional goals',
+          title: 'benefit4Title',
+          description: 'benefit4Description',
         },
         {
           id: '05',
-          title: 'Competitive salary',
-          description:
-            'Our renumeration packages are in line with industry standards, commiserate to job roles, and functions and performance driven',
+          title: 'benefit5Title',
+          description: 'benefit5Description',
         },
       ],
     }

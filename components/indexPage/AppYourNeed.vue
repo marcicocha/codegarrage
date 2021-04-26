@@ -2,8 +2,8 @@
   <section class="container padding">
     <AppSectionHeading
       class="needSection"
-      title="YOUR NEEDS"
-      description="OUR SERVICES"
+      title="yourNeed"
+      description="ourServices"
     />
     <br />
     <div class="hide-for-desktop">
@@ -15,7 +15,7 @@
         class="m-b"
       >
         <template slot="content">
-          <p>{{ need.description }}</p>
+          <p>{{ $t(need.description) }}</p>
         </template>
       </AppAccordion>
     </div>
@@ -26,12 +26,12 @@
           :key="need.id"
           @click="changeNeedDataHandler(need.id)"
         >
-          <h5>{{ need.title }}</h5>
+          <h5>{{ $t(need.title) }}</h5>
         </div>
       </div>
       <div class="need__description">
-        <h2>{{ needObj.title }}</h2>
-        <p>{{ needObj.description }}</p>
+        <h2>{{ $t(needObj.title) }}</h2>
+        <p>{{ $t(needObj.description) }}</p>
       </div>
     </div>
   </section>
@@ -49,75 +49,63 @@ export default {
     return {
       needList: [
         {
-          title: 'Web Development',
-          description:
-            'Tap into our deep web development expertise to build any web solution that your company needs, from  dynamic websites to complex enterprise-sized web solutions.',
+          title: 'webDevelopment',
+          description: 'webDevelopmentDescription',
           id: 1,
         },
         {
-          title: 'Mobile App Development',
-          description:
-            'Steering clients  through digital transformation, we build intuitive and engaging  Android, iOS, and cross-platform for businesses that your end users can adapt to quickly.',
+          title: 'mobileAppDevelopment',
+          description: 'mobileDevelopmentDescription',
           id: 2,
         },
         {
-          title: 'Incubation and Acceleration',
-          description:
-            'With exclusive access to resources, tools, and services, we support your startup business and help you grow your network of mentors, investors and founders.',
+          title: 'incubationAccelaration',
+          description: 'incubationAccelarationDescription',
           id: 3,
         },
         {
-          title: 'Software Testing/Quality Assurance',
-          description:
-            'With our unparalleled technical expertise, we implement quality testing frameworks and automation expertise using current testing trends.',
+          title: 'softwareTestingQA',
+          description: 'softwareTestingQADescription',
           id: 4,
         },
         {
-          title: 'Application Maintenance & Support',
-          description:
-            'Keeping your application online, secure, updated and bug-free is our main goal, while we deal and resolve real time problems your  application might encounter on a day-to-day operational level.',
+          title: 'applicationSupport',
+          description: 'applicationSupportDescription',
           id: 5,
         },
         {
-          title: 'Research and Development',
-          description:
-            'We perform original investigations and research findings to strengthen your software engineering, technical implementation or research thesis, which can be used to create improved technologies. We have talents, labs, processes and infrastructures to deliver world class results to you.',
+          title: 'researchDevelopment',
+          description: 'researchDevelopmentDescription',
           id: 6,
         },
         {
-          title: 'Cloud and Enterprise application development',
-          description:
-            'We develop bespoke and streamlined enterprise solutions to automate your internal processes, drive business efficiency and flexibility, and provide advanced insights into your business operations and employees.',
+          title: 'cloudEnterprise',
+          description: 'cloudEnterpriseDescription',
           id: 7,
         },
         {
-          title: 'DevOps as a Service',
-          description:
-            'We offer cloud and devops solutions aimed at high performance, scalability, and agility at a reduced cost to maximize ROI, software availability,  cloud security, and continuous integrations allowing you to  run your solutions as fast as you run your business.',
+          title: 'devopsService',
+          description: 'devopsServiceDescription',
           id: 8,
         },
         {
-          title: 'UI/UX and product design',
-          description:
-            'We are a design first development company. Projects are driven by designers and they make sure design and experiences translate to code. With expressive design, we give life to brands and create a synergy between the brand and the user.',
+          title: 'uiUxProductDesign',
+          description: 'uiUxProductDesignDescription',
           id: 9,
         },
         {
-          title: 'Emergency and Response',
-          description:
-            'This is a key service offered to businesses in need of quick  response to their business or application needs. Our dedicated emergency and response team are always available on a 24/7 hour basis to streamline your processes and give life to dying businesses or solutions.',
+          title: 'emergencyResponse',
+          description: 'emergencyResponseDescription',
           id: 10,
         },
         {
-          title: 'Data Analytics/AI/ML',
-          description:
-            'With our decades of expertise in the areas of Artificial intelligence, deep learning, machine learning, and data analysis; we build highly intelligent, automated, and analytical solutions for businesses to fast-track your problem-solving capabilities.',
+          title: 'dataAnalyticsAIML',
+          description: 'dataAnalyticsDescription',
           id: 11,
         },
         {
-          title: 'Software Programming Mentorship and consulting',
-          description:
-            ' Business goals, technical requirements, project scoping and programing mentorship as we push the edge of innovations with our technical competencies and our delivery track record.',
+          title: 'softwareProgramming',
+          description: 'softwareProgrammingDescription',
           id: 12,
         },
       ],

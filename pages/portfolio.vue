@@ -1,9 +1,8 @@
 <template>
   <div class="container padding">
-    <h6>OUR WORK</h6>
+    <h6>{{ $t('ourWork') }}</h6>
     <h3 class="column-6">
-      Some highlights of our favorite projects we've done for forward thinking
-      clients.
+      {{ $t('portfolioDescription') }}
     </h3>
     <AppYourIdeas />
   </div>

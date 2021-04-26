@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>{{ title }}</h1>
-    <h1 class="section__heading_description">{{ description }}</h1>
+    <h1>{{ $t(title) }}</h1>
+    <h1 class="section__heading_description">{{ $t(description) }}</h1>
   </div>
 </template>
 <script>
