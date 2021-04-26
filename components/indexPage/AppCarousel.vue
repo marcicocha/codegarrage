@@ -48,6 +48,10 @@ export default {
     width: 30.3125rem;
     height: 30.25rem;
   }
+  @include breakpoint-up(xxlarge) {
+    width: 30.3125rem;
+    height: 50.25rem;
+  }
   div {
     width: 100%;
     height: 60%;
