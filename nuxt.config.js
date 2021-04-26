@@ -54,6 +54,7 @@ export default {
   i18n: {
     locales: ['en', 'fr'],
     defaultLocale: 'en',
+    skipSettingLocaleOnNavigate: true,
     vueI18n: {
       fallbackLocale: 'en',
       messages: {
