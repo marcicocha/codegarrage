@@ -2,23 +2,18 @@
   <section class="container padding">
     <AppSectionHeading
       class="companySection"
-      title="OUR COMPANY"
-      description="OUR CULTURE"
+      title="ourCompany"
+      description="ourCulture"
     />
 
     <div class="flex flex-jc-sb work">
       <div class="column-6 m-b">
-        <h6>WORK</h6>
+        <h6>{{ $t('work') }}</h6>
         <p>
-          We take pride in our outstanding client care services being known as
-          one of the top quality care support specialists globally. With a mix
-          of our technical expertise, and experience, we provide nothing else
-          but excellence.
+          {{ $t('work1Description') }}
         </p>
         <p>
-          The success of our company is dependent on our ability to anticipate
-          clients needs, adapt software solutions to these needs and provide
-          corporations with vital planning tools.
+          {{ $t('work2Description') }}
         </p>
       </div>
       <div class="column-6">
@@ -27,14 +22,12 @@
     </div>
     <div class="flex flex-jc-sb leisure">
       <div class="column-6 m-b">
-        <h6>LEISURE</h6>
+        <h6>{{ $t('leisure') }}</h6>
         <p>
-          We value our employees commitment and their timely response to client
-          claims, by offering top notch tech service delivery.
+          {{ $t('leisure1Description') }}
         </p>
         <p>
-          An all inclusive employer we seek work life balance for our employees
-          and provide opportunities for team bonding, relaxation and fun.
+          {{ $t('leisure2Description') }}
         </p>
       </div>
       <div class="column-6">
@@ -43,8 +36,8 @@
     </div>
     <div class="padding expertise">
       <div style="margin-bottom: 2rem">
-        <h6>EXPERTISE</h6>
-        <p>Powering growth for amazing businesses</p>
+        <h6>{{ $t('expertise') }}</h6>
+        <p>{{ $t('expertiseDescription') }}</p>
       </div>
       <div class="logos">
         <div><img src="@/assets/img/company-logo/ios.svg" alt="ios" /></div>
@@ -223,9 +216,9 @@ img {
         img {
           width: 30%;
           object-position: center;
-          position: absolute;
-          top: 0;
-          left: 0;
+          // position: absolute;
+          // top: 0;
+          // left: 0;
         }
         &:nth-child(14) {
           width: 14.2857%;

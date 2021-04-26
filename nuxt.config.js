@@ -1,3 +1,4 @@
+import { English, French } from './utils/language'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -56,12 +57,8 @@ export default {
     vueI18n: {
       fallbackLocale: 'en',
       messages: {
-        en: {
-          welcome: 'Welcome',
-        },
-        fr: {
-          welcome: 'Bienvenue',
-        },
+        en: English,
+        fr: French,
       },
     },
   },

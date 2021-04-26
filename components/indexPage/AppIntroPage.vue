@@ -2,14 +2,11 @@
   <section class="container flex flex-jc-sb">
     <div class="column-6 p-right" style="margin-bottom: 3rem">
       <h2>
-        Turn the best of your business ideas into innovative software solutions.
+        {{ $t('introTitle') }}
       </h2>
       <br />
       <p>
-        Our software engineers build high-quality solutions while utilizing the
-        most recent tech capabilities. The range of our services is wide as we
-        have a tech stack that would satisfy all the possible modern
-        requirements of the IT business.
+        {{ $t('introDescription') }}
       </p>
     </div>
     <div class="column-6" style="margin-bottom: 4rem">
@@ -17,16 +14,20 @@
         <div class="intro__image-container">
           <div class="div__title title1"><h1>01</h1></div>
           <div class="div__text text1">
-            <span>Data-Related Software Engineering</span>
+            <span>{{ $t('dataRelated') }}</span>
           </div>
         </div>
         <div class="intro__image-container">
           <div class="div__title title2"><h1>02</h1></div>
-          <div class="div__text text2"><span>Software Consulting</span></div>
+          <div class="div__text text2">
+            <span>{{ $t('softwareConsulting') }}</span>
+          </div>
         </div>
         <div class="intro__image-container">
           <div class="div__title title3"><h1>03</h1></div>
-          <div class="div__text text3"><span>Digital Transformation</span></div>
+          <div class="div__text text3">
+            <span>{{ $t('digitalTransformation') }}</span>
+          </div>
         </div>
       </div>
     </div>
