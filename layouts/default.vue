@@ -105,7 +105,7 @@
         </div>
       </div>
     </header>
-    <div class="child-body">
+    <div ref="scroll" class="child-body">
       <div>
         <Nuxt />
       </div>
@@ -229,6 +229,15 @@ export default {
       language: 'en',
       visible: false,
     }
+  },
+  watch: {
+    $route: {
+      handler(to, from) {
+        document.body.scrollTop = 0
+        document.documentElement.scrollTop = 0
+        this.$refs.scroll.scrollTop = 0 // Because my scroll layer is not a body, set the scrollTop of the scroll layer to 0
+      },
+    },
   },
   methods: {
     showOverlay() {

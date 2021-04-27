@@ -235,7 +235,7 @@ export const English = {
   ourPortfolio: 'OUR PORTFOLIO',
   ourLeaders: 'OUR LEADERS',
   yourWords: 'YOUR WORDS',
-  ourMotivatio: 'OUR MOTIVATION',
+  ourMotivation: 'OUR MOTIVATION',
   engineering: 'Engineering',
   operationProject: 'Operations and Projects',
   businessProject: 'Business and Projects',

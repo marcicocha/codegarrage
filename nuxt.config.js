@@ -3,6 +3,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   ssr: false,
+  scrollToTop: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Codegarage Africa',
