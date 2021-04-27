@@ -170,11 +170,9 @@
                   <p>{{ $t('follow') }}</p>
                   <ul>
                     <li>
-                      <a
-                        href="https://twitter.com/CodegarageA"
-                        target="_blank"
-                      ></a>
-                      Twitter
+                      <a href="https://twitter.com/CodegarageA" target="_blank"
+                        >Twitter</a
+                      >
                     </li>
                     <li>
                       <a

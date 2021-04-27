@@ -5,7 +5,7 @@ export default {
   ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Codegarage',
+    title: 'CodegarageAfrica',
     htmlAttrs: {
       lang: 'en',
     },
