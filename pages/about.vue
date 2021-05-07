@@ -192,25 +192,32 @@ export default {
           }
           &:first-child {
             top: 2.5rem;
+            animation: fadeInDown 1s;
             &::after {
               top: -2rem;
               left: 1.2rem;
+              animation: fadeInTopLeft 2s;
             }
           }
           &:nth-child(2) {
             background: $dark-red;
+            animation: fadeInDown 2s;
+            animation-timing-function: linear;
             &::after {
               height: 90%;
               top: 2rem;
               left: 1.2rem;
+              animation: slideInUp 3s;
             }
           }
           &:last-child {
             top: 2.5rem;
+            animation: fadeInDown 2s;
             &::after {
               height: 90%;
               top: 1.5rem;
               left: 1.2rem;
+              animation: fadeInTopRight 2s;
             }
           }
           span {

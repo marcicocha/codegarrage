@@ -1,6 +1,6 @@
 <template>
   <section class="container flex flex-jc-sb">
-    <div class="column-6 p-right" style="margin-bottom: 3rem">
+    <div class="column-6 p-right intro__heading" style="margin-bottom: 3rem">
       <h2>
         {{ $t('introTitle') }}
       </h2>
@@ -46,6 +46,9 @@ export default {
   }
 }
 .intro {
+  &__heading {
+    animation: fadeInDown 2s;
+  }
   &__image {
     display: flex;
     justify-content: center;
