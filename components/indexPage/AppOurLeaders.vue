@@ -22,22 +22,22 @@ export default {
     return {
       imageList: [
         {
-          imgPath: 'leader/oluwafemi_korede.jpg',
+          imgPath: 'leader/oluwafemi-korede.jpg',
           name: 'Oluwafemi Korede',
           description: 'engineering',
         },
         {
-          imgPath: 'leader/sylvia_onwukwe.jpg',
+          imgPath: 'leader/sylvia-onwukwe.jpg',
           name: 'Sylvia Onwukwe',
           description: 'engineering',
         },
         {
-          imgPath: 'leader/bimpe_ayoola.jpg',
+          imgPath: 'leader/bimpe-ayoola.jpg',
           name: 'Bimpe Ayoola',
           description: 'operationProject',
         },
         {
-          imgPath: 'leader/peter_onu.jpg',
+          imgPath: 'leader/peter-onu.jpg',
           name: 'Peter Onu',
           description: 'businessProject',
         },
