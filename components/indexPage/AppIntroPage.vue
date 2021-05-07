@@ -47,7 +47,7 @@ export default {
 }
 .intro {
   &__heading {
-    animation: fadeInDown 2s;
+    animation: slideInLeft 2s;
   }
   &__image {
     display: flex;
@@ -109,23 +109,29 @@ export default {
       }
       .title1 {
         height: 6.674375rem;
+        animation: fadeInDown 2s;
         @include breakpoint-up(large) {
           height: 13.08875rem;
         }
         &::after {
           left: 20%;
           top: 6%;
+          animation: fadeInRight 2s;
         }
       }
       .title2 {
+        animation: fadeInDown 1s;
         &::after {
           top: -10%;
           left: 20%;
+          animation: fadeInLeft 2s;
         }
       }
       .title3 {
+        animation: fadeInDown 1s;
         &::after {
           left: 80%;
+          animation: fadeInRight 2s;
         }
         h1 {
           position: absolute;
@@ -151,6 +157,7 @@ export default {
         top: 60%;
         right: -20%;
         width: 9rem;
+        animation: slideInRight 3s;
         @include breakpoint-up(large) {
           top: 49%;
           right: -35%;
@@ -160,10 +167,12 @@ export default {
       .text2 {
         top: 25%;
         left: 55%;
+        animation: slideInRight 3s;
       }
       .text3 {
         bottom: -25%;
         left: -55%;
+        animation: slideInRight 3s;
         @include breakpoint-up(large) {
           bottom: -20%;
         }
