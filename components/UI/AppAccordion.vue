@@ -3,7 +3,7 @@
     <vsa-list :init-active="initIsTrue">
       <vsa-item>
         <vsa-heading
-          ><span class="accordion_heading">{{ heading }}</span>
+          ><span class="accordion_heading">{{ $t(heading) }}</span>
           <div class="tiny-border">
             <span></span>
             <span></span>
