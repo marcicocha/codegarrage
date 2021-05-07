@@ -158,6 +158,7 @@ export default {
     &__text {
       order: 2;
       margin-bottom: 2rem;
+      animation: slideInRight 2s;
     }
     &__image {
       order: 1;
