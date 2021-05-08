@@ -112,4 +112,13 @@
       flex: 1;
     }
   }
+  .display {
+    &__block {
+      display: block;
+    }
+
+    &__none {
+      display: none;
+    }
+  }
 }
