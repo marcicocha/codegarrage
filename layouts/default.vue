@@ -71,6 +71,8 @@
       <div
         :class="{
           header__menu: true,
+          display__none: !overlayIsVisible,
+          display__block: overlayIsVisible,
           'fade-in': overlayIsVisible,
           'fade-out': !overlayIsVisible,
         }"
